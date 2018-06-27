@@ -1,0 +1,132 @@
+/* *****************************
+   **Developed and Designed By** 
+   ********shashank sanket******
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+ul {
+    background: white;
+    border: 1px solid darkgrey;
+    overflow: auto;	
+    margin: 0;
+    max-height: 1000px; 
+    padding: 12px;  
+    text-align: center; 
+    font: 14px "Open Sans", sans-serif; 
+}
+
+ h1,h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+  }
+  span{
+   font: 9px "Open Sans", sans-serif;
+   text-decoration: italic;
+   margin: 0;
+   padding: 0;
+   text-align: right;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    display:inline-block;
+}
+ul {
+ 
+    margin: 0;
+    padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background:-webkit-linear-gradient(-99deg, #5496b0, #52dcac);}
+ul li:hover ul {display: block;}
+ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+ul li ul li { 
+    background: #555; 
+    display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+
+
+
+#map-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    z-index: 0;
+    margin: 0;
+    padding: 0; }
+
+#map {
+    width:100%;
+    height:100%;
+    top: 0px;
+    left:0px; 
+    }
+
+  header {
+    height: calc(100% - 60px);
+    width: 265px;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+   background: #0996b0;
+    background: -webkit-linear-gradient(-99deg, #5496b0, #52dcac);
+    padding: 12px 12px 12px 12px;
+  } 
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 0.6rem; }
+    
+    ul {
+    background: white;
+    border: 0px solid darkgrey;
+    overflow: auto;	
+    margin: 0;
+    max-height: 500px; 
+    padding: 6px;  
+    text-align: center; 
+    font: 6px "Open Sans", sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 6px;
+    display:inline-block;
+}
+ul li ul {
+    position: absolute;
+    width: 120px;
+    display: none;
+	}
+  }
+    
