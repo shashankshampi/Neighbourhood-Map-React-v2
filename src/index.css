@@ -10,7 +10,7 @@
 }
 
 html,
-body {
+body,p {
   margin: 0;
   padding: 0;
 
@@ -88,7 +88,7 @@ ul li ul li:hover {background: #666;}
 
   header {
     height: calc(100% - 60px);
-    width: 265px;
+    width: 260px;
     display: block;
     position: fixed;
     z-index: 1;
@@ -96,12 +96,14 @@ ul li ul li:hover {background: #666;}
     top: 0;
     left: 0;
     overflow-x: hidden; 
-   background: #0996b0;
+    background: #0996b0;
     background: -webkit-linear-gradient(-99deg, #5496b0, #52dcac);
     padding: 12px 12px 12px 12px;
   } 
+  
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 750px) {
   header h1 {
     font-size: 0.6rem; }
     
@@ -119,8 +121,8 @@ ul li ul li:hover {background: #666;}
 a {
     text-decoration: none;
     color: black;
-    font-size: 12px;
-    padding: 6px;
+    font-size: 10px;
+    padding: 4px;
     display:inline-block;
 }
 ul li ul {
@@ -128,5 +130,92 @@ ul li ul {
     width: 120px;
     display: none;
 	}
+	
+	header {
+    height: calc(70% - 50px);
+    width: 180px;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+    background: #0996b0;
+    background: -webkit-linear-gradient(-99deg, #5496b0, #52dcac);
+    padding: 10px 10px 10px 10px;
+  } 
+  p{
+    font-weight: 230;
+    font-size: 10px;
+    }
+    
+    h1,h2 {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+  }	
+     }
+     
+ @media screen and (max-width: 450px) {
+ 
+  header h1 {
+    font-size: 0.4rem; }
+    
+    ul {
+    background: white;
+    overflow: auto;	
+    margin: 0;
+    max-height: 500px; 
+    padding: 2px;  
+    text-align: center; 
+    font: 4px "Open Sans", sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 9px;
+    padding: 2px;
+    display:inline-block;
+}
+ul li ul {
+    position: absolute;
+    width: 80px;
+    display: none;
+	}
+	
+	 header {
+    height: calc(40% - 40px);
+    width: 130px;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+    background: #0996b0;
+    background: -webkit-linear-gradient(-99deg, #5496b0, #52dcac);
+    padding: 8px 8px 8px 8px;
+    display:inline-block;
+  } 
+  p{
+    font-weight: 180;
+    font-size: 8.5px;
+    }
+    
+    h1,h2 {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
   }
+	
+     }
+  
+  
+  
+  
+  
+  
     
